@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Light-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Black-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Black-Alphabetic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Medium-Alphabetic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Thin-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('font/NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'NotoSansKR';
+}
+
+/******** 🌻header ********/
+header {
+    width: 1920px;
+    height: 100px;
+    background-color: #33333356;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+
+header h1 {
+    width: 320px;
+    line-height: 100px;
+    text-align: center;
+}
+header nav {
+    
+    height: 100%;
+}
+header nav ul li {
+    width: 180px;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/******** 🌻main_visual ********/
+.main_visual video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main_visual div h2 {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 320px;
+}
+
+/******** 🌻.cont01 ********/
+
+/* header 부분 나중에 */
+
+.cont01 {
+    width: 1920px;
+    height: 1080px;
+    
+}
+
+
+.cont01 .inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+.cont01 .inner h3 {
+    font-size: 80px;
+    margin-top: 224px;
+    margin-bottom: 30px;
+}
+.cont01 .inner p {
+    font-size: 28px;
+    margin-bottom: 100px;
+    word-break: keep-all;
+}
+.cont01 .inner .list {
+    width: 408px;
+    height: 408px;
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .inner .list .item {
+    width: 408px;
+    height: 408px;
+    margin-right: 28px;
+    position: relative;
+}
+
+.cont01 .inner .list .item figure {
+    width: 408px;
+    height: 408px;
+    overflow: hidden;
+    
+}
+.cont01 .inner .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.cont01 .inner .list .item figure:hover img {
+    transform: scale(1.2);
+}
+
+.cont01 .inner .list .item p {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    font-weight: bold;
+    top: 332px;
+    left: 0;
+}
+
+/******** 🌻.cont02 ********/
+
+/* header 나중에 */
+
+.cont02 {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+.cont02 video {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.cont02 .inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 197px;
+    left: 429px;
+}
+.cont02 .inner h2 {
+    font-size: 240px;
+    color: #fff;
+    margin-bottom: 70px;
+    
+    
+}
+.cont02 .inner .item {
+    
+    background-color: #fff;
+    position: relative;
+    width: 1062px;
+    height: 470px;
+}
+.cont02 .inner .item figure{
+    position: absolute;
+    top: -200px;
+    right: 30px;
+}
+.cont02 .inner .item div {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+.cont02 .inner .item h4 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.cont02 .inner .item h3 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.cont02 .inner .item p {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+.cont02 .inner .item a {
+    font-size: 22px;
+    color: #fff;
+    width: 190px;
+    height: 60px;
+    background-color: #1d55e3;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 28px;
+}
+
+/******** 🌻.cont03  ********/
+.cont03 {
+    width: 1920px;
+    height: 1080px;
+    background-color: #000;
+    position: relative;
+    
+    
+}
+.cont03 .inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 196px 0;
+    
+}
+.cont03 .inner h2 {
+    font-size: 240px;
+   
+}
+.cont03 .inner p {
+    font-size: 22px;
+}
+.cont03 .inner a {
+    font-size: 22px;
+    color: #fff;
+    width: 190px;
+    height: 60px;
+    background-color: #1d55e3;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-right: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+/********* 🌻.text_animation ********/
+.text_animation {
+    width: 200px;
+    height: 1080px;
+    background-color: #1d55e3;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.text_animation p {
+    display: inline-block;
+    color: #1d55e300;
+    font-size: 80px;
+    line-height: 200px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #fff;
+    margin: 50px 0;
+    writing-mode: vertical-lr;
+    /* 💛텍스트 세로로 설정 */
+}
+
+/******** 🌻.footer ********/
+footer {
+    width: 1280px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: #fff;
+    color: #333;
+}
+
+footer ul li {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+footer p:nth-of-type(2) {
+    font-size: 14px;
+    margin-top: 10px;
+}
+    
+
