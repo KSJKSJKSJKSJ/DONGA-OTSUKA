@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/donga-otsuka_logo.png" alt="동아오츠카" />
+                </a>
+            </h1>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">NEWS/PR</a></li>
+                    <li><a href="#">RECRULT</a></li>
+                    <li><a href="#">CS CENTER</a></li>
+                    <li><a href="#">SHOP</a></li>
+                </ul><!-- .gnb end -->
+            </nav>
+        </div><!-- .inner end -->
+    </header>
+
+    <main>
+        <div class="well" id="well">
+            <div class="panel">
+                <section class="main_visual">
+                    <video controls autoplay muted loop>
+                        <source src="img/main_visual.mp4" type="video/mp4" />
+                    </video>
+                    <div class="inner">
+                        <h2>당신의 건강이 행복입니다. <br />
+                            건강을 생각하는 음료, 동아오츠카</h2>
+                    </div><!-- .inner end -->
+                </section><!-- .main_visual end -->
+            </div>
+            <div class="panel">
+                <section class="cont01">
+                    <div class="inner">
+                        <p>DONGA-OTSUKA</p>
+                        <span>지속적인 연구개발과 기술 축적으로 식품의 질을 보다 높여 세계 속의 음료기업으로 거듭나기 위해
+                            오늘도 도약의 발판을 굳건히 하고 있습니다.</span>
+                        <div class="list">
+                            <div class="item">
+                                <figure>
+                                    <img src="img/company_introduction.jpg" alt="Company Inrtoduction" />
+                                    <p>Company<br />Inrtoduction</p>
+                                </figure>
+                            </div><!-- .item end /1 -->
+                            <div class="item">
+                                <figure>
+                                    <img src="img/CEO-Greeting.jpg" alt="CEO Greeting" />
+                                    <p>CEO<br />Greeting</p>
+                                </figure>
+                            </div><!-- .item end /2 -->
+                            <div class="item">
+                                <figure>
+                                    <img src="img/about_history.jpg" alt="about history" />
+                                    <p>About<br />History</p>
+                                </figure>
+                            </div><!-- .item end /3 -->
+                        </div><!-- .list end -->
+                    </div> <!-- .inner end -->
+                </section> <!-- .cont01 end -->
+            </div>
+            <div class="panel">
+                <section class="cont02">
+                    <video controls autoplay muted loop>
+                        <source src="img/-37712.mp4" type="video/mp4" />
+                    </video>
+
+                    <div class="inner">
+                        <p><span>B</span>rand</p>
+                        <div class="item">
+                            <figure>
+                                <img src="img/포카리스웨트.png" alt="포카리스웨트" />
+                            </figure>
+                            <div>
+                                <h4>내 몸에 가까운 물</h4>
+                                <h3>포카리스웨트</h3>
+                                <p>포카리스웨트는 체액과 가까운 전해질 농도로 조성되어있어 <br />
+                                    체내로 신속하게 수분과 이온을 보충해주고 몸의 밸런스를 유지해 줍니다.</p>
+                                <a href="#">브랜드 소개</a>
+                                <a href="#">제품 구매하기</a>
+                            </div>
+                        </div><!-- .item end -->
+
+                    </div><!-- .inner end -->
+                </section><!-- .cont02 end -->
+            </div>
+            <div class="panel">
+                <section class="cont03">
+                    <div class="inner">
+                        <p><span>R</span>ecruit</p>
+                        <p>동아오츠카는 인적자원의 가치를 최우선으로 하고 있으며 창의적인 인재에게 상시 입사의 문이 열려 있습니다.</p>
+                        <a href="#">채용 공고</a>
+                        <a href="#">지원조회 및 수정</a>
+
+                    </div><!-- .inner end -->
+                    <div class="text_animation">
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+                        <p>donga-otsuka</p>
+
+
+                    </div><!-- .text_animation end -->
+                    <div class="footer">
+                        <div class="inner02">
+                            <div class="f_info">
+                                <ul>
+                                    <li>서울특별시 동대문구 천호대로 64</li>
+                                    <li>TEL. 080-999-7644</li>
+                                </ul>
+                            </div><!-- .f_info end -->
+                            <p>Copyright©Donga-otsuka co.</p>
+                        </div><!-- .inner02 end -->
+                    </div><!-- .footer end -->
+                </section><!-- .cont03 end -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        (function () {
+            "use strict";
+            /*[pan and well CSS scrolls]*/
+            var pnls = document.querySelectorAll('.panel').length,
+                scdir, hold = false;
+
+            function _scrollY(obj) {
+                var slength, plength, pan, step = 100,
+                    vh = window.innerHeight / 100,
+                    vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
+                if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
+                    pan = this || obj;
+                    plength = parseInt(pan.offsetHeight / vh);
+                }
+                if (pan === undefined) {
+                    return;
+                }
+                plength = plength || parseInt(pan.offsetHeight / vmin);
+                slength = parseInt(pan.style.transform.replace('translateY(', ''));
+                if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
+                    slength = slength - step;
+                } else if (scdir === 'down' && slength < 0) {
+                    slength = slength + step;
+                } else if (scdir === 'top') {
+                    slength = 0;
+                }
+                if (hold === false) {
+                    hold = true;
+                    pan.style.transform = 'translateY(' + slength + 'vh)';
+                    setTimeout(function () {
+                        hold = false;
+                    }, 1000);
+                }
+                console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+            }
+            /*[swipe detection on touchscreen devices]*/
+            function _swipe(obj) {
+                var swdir,
+                    sX,
+                    sY,
+                    dX,
+                    dY,
+                    threshold = 100,
+                    /*[min distance traveled to be considered swipe]*/
+                    slack = 50,
+                    /*[max distance allowed at the same time in perpendicular direction]*/
+                    alT = 500,
+                    /*[max time allowed to travel that distance]*/
+                    elT, /*[elapsed time]*/
+                    stT; /*[start time]*/
+                obj.addEventListener('touchstart', function (e) {
+                    var tchs = e.changedTouches[0];
+                    swdir = 'none';
+                    sX = tchs.pageX;
+                    sY = tchs.pageY;
+                    stT = new Date().getTime();
+                    //e.preventDefault();
+                }, false);
+
+                obj.addEventListener('touchmove', function (e) {
+                    e.preventDefault(); /*[prevent scrolling when inside DIV]*/
+                }, false);
+
+                obj.addEventListener('touchend', function (e) {
+                    var tchs = e.changedTouches[0];
+                    dX = tchs.pageX - sX;
+                    dY = tchs.pageY - sY;
+                    elT = new Date().getTime() - stT;
+                    if (elT <= alT) {
+                        if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
+                            swdir = (dX < 0) ? 'left' : 'right';
+                        } else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
+                            swdir = (dY < 0) ? 'up' : 'down';
+                        }
+                        if (obj.id === 'well') {
+                            if (swdir === 'up') {
+                                scdir = swdir;
+                                _scrollY(obj);
+                            } else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
+                                scdir = swdir;
+                                _scrollY(obj);
+
+                            }
+                            e.stopPropagation();
+                        }
+                    }
+                }, false);
+            }
+            /*[assignments]*/
+            var well = document.getElementById('well');
+            well.style.transform = 'translateY(0)';
+            well.addEventListener('wheel', function (e) {
+                if (e.deltaY < 0) {
+                    scdir = 'down';
+                }
+                if (e.deltaY > 0) {
+                    scdir = 'up';
+                }
+                e.stopPropagation();
+            });
+            well.addEventListener('wheel', _scrollY);
+            _swipe(well);
+            var tops = document.querySelectorAll('.top');
+            for (var i = 0; i < tops.length; i++) {
+                tops[i].addEventListener('click', function () {
+                    scdir = 'top';
+                    _scrollY(well);
+                });
+            }
+
+            /* header color change */
+            /* let headerNav = document.querySelector('.inner');
+            let headerNavHeight = headerNav,offsetHeight;
+            let headerMenu = headerNav.querySelectorAll('.inner .pc ul li a')
+            console.log(headerMenu);
+
+            window.onscroll=function(){
+                if(window.scrollY >= 0) {
+                    headerNav.classList.add('nav_scroll');
+                    headerMenu.style.color='#537FE7';
+                } else {
+                    headerNav.classList.remove('nav_scroll');
+                }
+            } */
+
+
+        })();
+    </script>
+</body>
+
+</html>
